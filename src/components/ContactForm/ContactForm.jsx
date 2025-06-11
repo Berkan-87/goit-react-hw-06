@@ -24,8 +24,20 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={name} onChange={e => setName(e.target.value)} required />
-      <input type="tel" value={number} onChange={e => setNumber(e.target.value)} required />
+      <input
+        type="text"
+        value={name}
+        onChange={e => setName(e.target.value)}
+        placeholder="Enter name"
+        required
+      />
+      <input
+        type="tel"
+        value={number}
+        onChange={e => setNumber(e.target.value)}
+        placeholder="Enter phone number"
+        required
+      />
       <button type="submit">Add Contact</button>
     </form>
   );
